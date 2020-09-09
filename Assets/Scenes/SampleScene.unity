@@ -404,54 +404,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 4770223915372243277, guid: a29d238b8463b9f47991652f4dd81274,
     type: 3}
---- !u!1 &1518868385
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1518868387}
-  - component: {fileID: 1518868386}
-  m_Layer: 0
-  m_Name: Explosion
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1518868386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518868385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7739adb4b45ac34a8d9f992d5a39b7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particlePrefabs:
-  - {fileID: 6243269366444177124, guid: 6b6a734ab74917342930b77723496687, type: 3}
-  - {fileID: 6640147891566845240, guid: 67d0893880347c644bd4862b1b172460, type: 3}
-  - {fileID: 3819070369072176444, guid: c21b344988589b34c9f55202a8d73b2b, type: 3}
-  AmountOfParticles: 10
---- !u!4 &1518868387
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518868385}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618350936
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +418,7 @@ GameObject:
   - component: {fileID: 1618350937}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: TriggerExplosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float ShootingForce = 10f;
     public Vector3 ShootingDirection;
+    public GameObject ExplosionPrefab;
 
     public float LifeTime = 3f;
 
@@ -22,6 +23,16 @@ public class Bullet : MonoBehaviour
         if (LifeTime <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "TriggerExplosion")
+        {
+            GameObject explosionObject = Instantiate(ExplosionPrefab);
+
+            explosionObject.transform.position = transform.position;
         }
     }
 }
