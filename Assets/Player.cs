@@ -16,7 +16,16 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(BulletPrefab);
+            GameObject bulletObject = Instantiate(BulletPrefab);
+
+            Bullet bullet = bulletObject.GetComponent<Bullet>();
+            Vector3 shootingDirection =
+                new Vector3(
+                    Random.Range(-0.15f, 0.15f),
+                    Random.Range(-0.1f, 0.1f),
+                    1);
+
+            bullet.ShootingDirection = shootingDirection.normalized;
         }
     }
 }
